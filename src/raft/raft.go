@@ -17,15 +17,17 @@ package raft
 //   in the same server.
 //
 
-import "sync"
-import "labrpc"
-import "time"
-import "math/rand"
-import "sync/atomic"
-import "fmt"
+import (
+	"bytes"
+	"fmt"
+	"math/rand"
+	"sync"
+	"sync/atomic"
+	"time"
 
-import "bytes"
-import "labgob"
+	"MIT6.824-2018-Chinese/src/labgob"
+	"MIT6.824-2018-Chinese/src/labrpc"
+)
 
 const (
 	HeartbeatInterval    = time.Duration(120) * time.Millisecond

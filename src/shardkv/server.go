@@ -2,12 +2,13 @@ package shardkv
 
 
 // import "shardmaster"
-import "labrpc"
-import "raft"
-import "sync"
-import "labgob"
+import (
+	"sync"
 
-
+	"MIT6.824-2018-Chinese/src/labgob"
+	"MIT6.824-2018-Chinese/src/labrpc"
+	"MIT6.824-2018-Chinese/src/raft"
+)
 
 type Op struct {
 	// Your definitions here.

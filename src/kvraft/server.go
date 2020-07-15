@@ -2,12 +2,13 @@ package raftkv
 
 import (
 	"bytes"
-	"labgob"
-	"labrpc"
 	"log"
-	"raft"
 	"sync"
 	"time"
+
+	"MIT6.824-2018-Chinese/src/labgob"
+	"MIT6.824-2018-Chinese/src/labrpc"
+	"MIT6.824-2018-Chinese/src/raft"
 )
 
 func init() {
